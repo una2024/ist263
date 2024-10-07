@@ -27,20 +27,17 @@
             <th>Usage Rights</th>
         </tr>
         <tr>
-            <td><imgsrc="/Users/hanxinyu/Desktop/images.jpg"></imgsrc>
-                alt="https://www.google.com/local/imagery/report/?cb_client=local_photo_viewer&image_key=!1e10!2sAF1QipMsoRFzfajS-PAjf2o8PzMi8wkyT0P5sKHSF-MX" width="100"></td>
+            <td><imgsrc="/Users/hanxinyu/Desktop/images.jpg" alt="Description of the image" style=width="100%"></td>
             <td>Home page</td>
             <td>NA</td>
         </tr>
         <tr>
-            <td><img src="/Users/hanxinyu/Desktop/20231014_004808.jpg">
-                alt="https://www.pearldiner.com/" width="100"></td>
+            <td><img src="/Users/hanxinyu/Desktop/20231014_004808.jpg" alt="Description of the image" style=width="100%"></td>
             <td>About Page</td>
             <td>NA</td>
         </tr>
         <tr>
-            <td></Users/hanxinyu/Desktop/2024-01-30.jpg>
-                alt="https://www.theoriginaldelmonicos.com/"></td>
+            <td></Users/hanxinyu/Desktop/2024-01-30.jpg" alt="Description of the image" style=width="100%"></td>
             <td>Home page</td>
             <td>NA</td>
     </table>
