@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Channel</title>
+        <meta charset="utf-8">
+        <title>Food Channel</title>
+        <style>
+            table, th, td {border: 1px solid black;}
+        </style>
 </head>
 <body>
-    <h1>Una</h1>
+    <h1>Name: Una</h1>
     
     <p>Description: Some of the most popular restaurants in New York</p>
     
-    <p>URL to image on Github: <a>
+    <p>URL to image on Github:I want to do a web survey on the most popular restaurant design style in American 
+        restaurants! Because it combines the two elements that I am most interested in, food and design! What 
+        kind of restaurant style is the first choice for consumers? People prefer to have a better experience in 
+        what type of restaurant dating!<a>
 <href="https://www.brooklynchophouse.com/" target="_blank"></a></p>
     
     <h2>Example Site Media Entries</h2>
     
-    <table border="1">
+    <table>
         <tr>
             <th>Media Thumbnails</th>
             <th>Page</th>
