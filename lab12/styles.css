@@ -1,0 +1,76 @@
+
+<style>
+.img {float: right; margin-right: 10px}
+.clear {clear: both;}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .slideshow {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  .main-slide {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .main-slide img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+    border: 2px solid white;
+  }
+  
+  .description {
+    text-align: right;
+    max-width: 600px;
+  }
+  
+  .description h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .description h2 {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  
+  .description p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0;
+  }
+  
+  .planets {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .planet-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .planet-thumbnail:hover {
+    transform: scale(1.2);
+    border-color: yellow;
+  }
