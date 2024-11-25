@@ -1,0 +1,272 @@
+/* styles.css */
+
+/* CSS Variables for Theme Management */
+:root {
+    --primary-color: #ff6f61;
+    --secondary-color: #4CAF50;
+    --accent-color: #ffd700;
+    --background-color: #f0f4f8;
+    --text-color: #333333;
+    --header-height: 80px;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --header-bg: #1f1f1f;
+    --feature-bg: #1e1e1e;
+    --modal-bg: #2c2c2c;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Dark Mode Toggle Button */
+.toggle-button {
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('../assets/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    transition: background 0.3s;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* Features Section Styling */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+body.dark-mode .features {
+    background-color: #1a1a1a;
+}
+
+.feature {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+body.dark-mode .feature {
+    background-color: var(--feature-bg);
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.feature img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.feature h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+/* Modal Trigger Section */
+.modal-trigger-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    transition: opacity 0.3s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .modal-content {
+    background-color: var(--modal-bg);
+    color: #ffffff;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+body.dark-mode .close {
+    color: #ffffff;
+}
+
+body.dark-mode .close:hover,
+body.dark-mode .close:focus {
+    color: #ff6f61;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .feature img {
+        max-width: 80px;
+    }
+}
