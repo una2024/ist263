@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xinyu Han - Contact</title>
+    <style>
+        /* Ensure resizable fonts */
+        body {
+            font-size: 1rem; /* Relative unit for resizable text */
+        }
+
+        .skip-to-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        .skip-to-content:focus {
+            outline: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Content Button -->
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <h1>Contact</h1>
+        <p>
+            Name: Xinyu Han<br>
+            Address: Hinds Hall 219, Syracuse, NY 13210<br>
+            <img src="../images/Untitled.png" alt="Portfolio branding banner">
+        </p>
+
+        <p>
+            <a href="mailto:xhan29@syr.edu">Xinyu Han Email</a><br>
+            <img src="../images/LI-Logo-1.png" alt="LinkedIn logo">
+            <a href="https://www.linkedin.com/in/una-xinyu-han/">Visit LinkedIn Profile</a>
+        </p>
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1525367589265!2d-76.13336800000006!3d43.03822200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca0f3225%3A0xb7e0bcbf2e1292f6!2sHinds%20Hall%2C%20343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1szh-CN!2sus!4v1726182301554!5m2!1szh-CN!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Map showing location of Hinds Hall, Syracuse, NY">
+        </iframe>
+
+        <form action="https://formspree.io/f/xkgwloyj" method="post">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+
+            <fieldset>
+                <legend>Are you a:</legend>
+                <input type="radio" id="student" name="role" value="Student" required>
+                <label for="student">Student</label><br>
+                <input type="radio" id="professor" name="role" value="Professor">
+                <label for="professor">Professor</label><br>
+                <input type="radio" id="other" name="role" value="Other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <label for="message">Write your message here:</label><br>
+            <textarea id="message" name="message" rows="10" cols="50" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
+
